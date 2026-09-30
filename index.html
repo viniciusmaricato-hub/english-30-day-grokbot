@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>30-day English plan</title>
+<meta name="description" content="A 30-day plan in advanced business and meeting English for Vinicius Maricato.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+
+:root {
+  color-scheme: dark;
+  --bg: #100e0c;
+  --bg-2: #171410;
+  --ink: #f3ecdf;
+  --ink-soft: #ddd4c4;
+  --muted: #b7ad9e;
+  --faint: #8a8175;
+  --line: rgba(243, 236, 223, 0.12);
+  --line-strong: rgba(243, 236, 223, 0.22);
+  --brass: #d7b07a;
+  --brass-deep: #a68556;
+  --moss: #a3c19a;
+  --moss-deep: #243026;
+  --serif: "Fraunces", "Iowan Old Style", Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  --sans: Outfit, "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background:
+    radial-gradient(980px 520px at 8% -10%, rgba(215, 176, 122, 0.09), transparent 55%),
+    radial-gradient(820px 480px at 100% 0%, rgba(163, 193, 154, 0.05), transparent 50%),
+    var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+::selection { background: #d7b07a; color: #1a140c; }
+.skip {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  background: var(--brass);
+  color: #1a140c;
+  padding: 0.5rem 0.8rem;
+  z-index: 5;
+}
+.skip:focus { top: 0.6rem; }
+.wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.35rem; }
+.mast { padding: 4.2rem 0 2.2rem; }
+.byline {
+  margin: 0 0 1.1rem;
+  font-size: 0.74rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--brass);
+}
+h1 {
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(2.7rem, 7vw, 4.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+}
+.subtitle {
+  margin: 1rem 0 0;
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.25rem, 2.4vw, 1.55rem);
+  color: var(--brass);
+  letter-spacing: -0.01em;
+}
+.intro {
+  margin: 1.6rem 0 0;
+  max-width: 38rem;
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+.intro p { margin: 0 0 0.75rem; }
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.9rem;
+  margin: 1.6rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.nav a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line-strong);
+  font-size: 0.92rem;
+  padding-bottom: 0.08rem;
+}
+.nav a:hover { color: var(--brass); border-color: var(--brass); }
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  background: rgba(16, 14, 12, 0.9);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+}
+.sticky-inner { padding: 0.75rem 0 0.85rem; }
+.progress-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+.progress-count {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+}
+.progress-count span { color: var(--brass); }
+.today-note { margin: 0.2rem 0 0; color: var(--faint); font-size: 0.86rem; max-width: 36rem; }
+.complete {
+  margin: 0.55rem 0 0;
+  color: var(--moss);
+  font-family: var(--serif);
+  font-style: italic;
+}
+.meter { height: 2px; background: #2a261f; margin-top: 0.7rem; }
+.meter > span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #8d7344, #e4c898);
+}
+.week { padding: 3.2rem 0 0.4rem; }
+.week-kicker {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--brass);
+}
+.week h2 {
+  margin: 0.35rem 0 0;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(1.8rem, 4vw, 2.35rem);
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+}
+.dek { margin: 0.55rem 0 0; color: var(--muted); max-width: 34rem; }
+.day {
+  margin: 0;
+  padding: 1.45rem 0 1.55rem;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: 6.5rem;
+}
+.day.is-today {
+  margin-left: -0.85rem;
+  margin-right: -0.85rem;
+  padding-left: 0.85rem;
+  padding-right: 0.85rem;
+  background: linear-gradient(90deg, rgba(215, 176, 122, 0.09), transparent 70%);
+  box-shadow: inset 2px 0 0 var(--brass);
+}
+.day.is-done .day-title { color: var(--ink-soft); }
+.day-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.num {
+  margin: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--faint);
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+.today-pill {
+  display: none;
+  letter-spacing: 0.14em;
+  color: #1a140c;
+  background: var(--brass);
+  border-radius: 999px;
+  padding: 0.12rem 0.45rem;
+  font-size: 0.66rem;
+}
+.day.is-today .today-pill { display: inline-block; }
+.day-title {
+  margin: 0.28rem 0 0;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(1.35rem, 2.5vw, 1.7rem);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+.check {
+  flex: 0 0 auto;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.75rem 0.35rem 0.45rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink-soft);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.86rem;
+}
+.check:hover { border-color: var(--brass); color: var(--ink); }
+.check:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+.check[aria-pressed="true"] {
+  background: var(--moss-deep);
+  border-color: rgba(163, 193, 154, 0.55);
+  color: var(--moss);
+}
+.box {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  display: inline-grid;
+  place-items: center;
+}
+.check[aria-pressed="true"] .box { border-color: var(--moss); background: rgba(163, 193, 154, 0.15); }
+.check[aria-pressed="true"] .box::after {
+  content: "";
+  width: 0.45rem;
+  height: 0.28rem;
+  border-left: 1.5px solid var(--moss);
+  border-bottom: 1.5px solid var(--moss);
+  transform: rotate(-45deg) translateY(-1px);
+}
+.phrases { margin-top: 1rem; }
+.phrase {
+  display: grid;
+  grid-template-columns: 9.6rem 1fr;
+  gap: 0.2rem 1.15rem;
+  padding: 0.85rem 0;
+  border-top: 1px solid var(--line);
+}
+.term {
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.05rem;
+  color: var(--brass);
+  line-height: 1.3;
+}
+.mean { margin: 0; color: var(--ink-soft); }
+.ex {
+  margin: 0.4rem 0 0;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--ink);
+  line-height: 1.4;
+}
+.callout {
+  margin: 0.3rem 0 0;
+  padding: 0.85rem 1rem;
+  border-left: 2px solid var(--brass);
+  background: rgba(215, 176, 122, 0.06);
+  color: var(--ink-soft);
+}
+.callout strong { color: var(--brass); font-weight: 600; }
+.task {
+  margin: 0.2rem 0 0;
+  padding-top: 0.9rem;
+  color: var(--ink);
+}
+.task-label {
+  display: inline-block;
+  margin-right: 0.45rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--moss);
+}
+.foot {
+  padding: 2.8rem 0 3.4rem;
+  color: var(--faint);
+  font-size: 0.92rem;
+}
+.foot p { margin: 0 0 0.8rem; }
+.reset {
+  font: inherit;
+  font-size: 0.86rem;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  min-height: 44px;
+  padding: 0.35rem 0.9rem;
+  cursor: pointer;
+}
+.reset:hover { color: var(--ink); border-color: var(--brass); }
+.reset:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+@media (max-width: 640px) {
+  .mast { padding-top: 2.6rem; }
+  .phrase { grid-template-columns: 1fr; gap: 0.15rem; }
+  .day-head { flex-direction: column; }
+  .day.is-today { margin-left: -0.7rem; margin-right: -0.7rem; padding-left: 0.7rem; padding-right: 0.7rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .meter > span { transition: none; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#plan">Skip to the plan</a>
+<header class="mast">
+  <div class="wrap">
+    <p class="byline">For Vinicius Maricato</p>
+    <h1>30-day English plan</h1>
+    <p class="subtitle">Advanced business and meeting English</p>
+    <div class="intro">
+      <p>Give this about twenty to thirty minutes a day. Read the line of meaning, then say each example out loud until it sounds like something you would actually say in the room or write in the mail.</p>
+      <p>Before you mark the day done, write one sentence in your own words — a meeting line or an email line — that uses the language on real work, not on a textbook topic.</p>
+    </div>
+    <ul class="nav">
+      <li><a href="#week-1">Week 1 · Meetings</a></li>
+      <li><a href="#week-2">Week 2 · Nuance</a></li>
+      <li><a href="#week-3">Week 3 · Email</a></li>
+      <li><a href="#week-4">Week 4 · Pressure</a></li>
+    </ul>
+  </div>
+</header>
+<div class="sticky">
+  <div class="wrap sticky-inner">
+    <div class="progress-row">
+      <p class="progress-count" aria-live="polite"><span id="count">0</span> of 30</p>
+    </div>
+    <p class="today-note" id="today-note">Any day is fine. The first one you mark sets today, and the highlight moves forward each morning.</p>
+    <p class="complete" id="complete" hidden>Thirty days in. Keep the sentences that sounded like you.</p>
+    <div class="meter" aria-hidden="true"><span id="bar"></span></div>
+  </div>
+</div>
+<main id="plan">
+<section class="week" id="week-1">
+<div class="wrap">
+<p class="week-kicker">Week 1</p>
+<h2>Meeting language</h2>
+<p class="dek">The verbs people use when a meeting is actually deciding something.</p>
+<article class="day" id="day-1" data-day="1">
+<header class="day-head">
+<div>
+<p class="num">01 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Align before you leave</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 1 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">align</p>
+<div>
+<p class="mean">Get to the same picture of the goal or the decision. A nod is not alignment.</p>
+<p class="ex">“Before we leave, are we aligned that phase one is the portal only, not the mobile app?”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">alignment</p>
+<div>
+<p class="mean">The shared picture itself. You either have it with someone, or you don’t.</p>
+<p class="ex">“We don’t have alignment with Finance yet, so I won’t quote a date to the client.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">are we aligned?</p>
+<div>
+<p class="mean">A closing check, not a request for applause. Ask it while people can still disagree.</p>
+<p class="ex">“Are we aligned on the owner, or only on the idea?”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Say the closing check out loud, then write one alignment question from a project you are actually in.</p>
+</article>
+<article class="day" id="day-2" data-day="2">
+<header class="day-head">
+<div>
+<p class="num">02 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Push back with a reason</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 2 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">push back</p>
+<div>
+<p class="mean">Resist a plan, a date, or a scope change, and give the reason in the same breath.</p>
+<p class="ex">“I’d push back on a Friday launch. Legal still hasn’t cleared the consent copy.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">pushback</p>
+<div>
+<p class="mean">The noun. Name it when you expect resistance, so it doesn’t arrive as a surprise.</p>
+<p class="ex">“Expect pushback from Sales if we cut the discount. I’ll take that conversation, not you.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">hold the line</p>
+<div>
+<p class="mean">Keep a position you already own. Don’t soften it just to end the silence.</p>
+<p class="ex">“We can discuss packaging, but I’m going to hold the line on the price.”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Speak one push-back about a real deadline: the no, then the reason, in a single sentence.</p>
+</article>
+<article class="day" id="day-3" data-day="3">
+<header class="day-head">
+<div>
+<p class="num">03 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Flag it, then escalate</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 3 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">flag</p>
+<div>
+<p class="mean">Raise a gap or a risk early, while the room can still do something about it.</p>
+<p class="ex">“I want to flag that the client hasn’t signed the SOW, so we shouldn’t staff this yet.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">escalate</p>
+<div>
+<p class="mean">Take it to someone with authority to unblock it. Stronger than a flag, and later.</p>
+<p class="ex">“If procurement hasn’t moved by Thursday, we escalate to the sponsor. Not before.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">call out</p>
+<div>
+<p class="mean">Name the problem directly. Useful, and sharper — it can sound like blame if you aim it at a person.</p>
+<p class="ex">“I’ll call out the missing data in the note. I won’t call out the analyst in the meeting.”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Write two lines: what you would flag today, and the condition that would make you escalate it.</p>
+</article>
+<article class="day" id="day-4" data-day="4">
+<header class="day-head">
+<div>
+<p class="num">04 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Own the outcome</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 4 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">own</p>
+<div>
+<p class="mean">Drive an outcome to the end. In loose speech it covers both the work and the answerability.</p>
+<p class="ex">“I’ll own the client update. I need the figures from you by 3, and I’ll write the note.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">accountable</p>
+<div>
+<p class="mean">The person who answers for the result. On a RACI chart there is one; others may still do the work.</p>
+<p class="ex">“Priya stays accountable for the forecast. The rest of us are feeding it, not owning the number.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">I’ve got it</p>
+<div>
+<p class="mean">A short claim of ownership. Only say it if you can actually carry the next step.</p>
+<p class="ex">“I’ve got the follow-up note. If you also send one, the client will get two versions.”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Write one sentence that names what you own and one thing you deliberately do not.</p>
+</article>
+<article class="day" id="day-5" data-day="5">
+<header class="day-head">
+<div>
+<p class="num">05 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Park it, or table it</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 5 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">park</p>
+<div>
+<p class="mean">Set a topic aside and come back later. The safe verb in a mixed US and UK room.</p>
+<p class="ex">“Let’s park pricing until Finance is actually in the room, and pick it up at 3.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">table (US)</p>
+<div>
+<p class="mean">Postpone the discussion. In American business English you are taking it off the table.</p>
+<p class="ex">“Let’s table the hiring plan until next week, once we have the headcount number.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">table (UK)</p>
+<div>
+<p class="mean">Present something for discussion now. In British English the verb means the opposite.</p>
+<p class="ex">“I’d like to table the hiring plan while the budget owners are here, not after they leave.”</p>
+</div>
+</div>
+</div>
+<aside class="callout"><strong>US / UK.</strong> The noun is shared: “on the table” means up for discussion in both. The verb is the trap. If the room is mixed, say park and name the moment you will come back.</aside>
+<p class="task"><span class="task-label">Task</span> Say the US sentence and the UK sentence out loud, then write a park sentence that names when you will return.</p>
+</article>
+<article class="day" id="day-6" data-day="6">
+<header class="day-head">
+<div>
+<p class="num">06 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Bandwidth and scope</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 6 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">bandwidth</p>
+<div>
+<p class="mean">Time and attention you actually have. Capacity says the same thing with less jargon.</p>
+<p class="ex">“I don’t have the bandwidth for a second design review this week. I can do Monday.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">scope</p>
+<div>
+<p class="mean">The boundary of what is included. If it isn’t named, people will assume their version.</p>
+<p class="ex">“Scope for this phase is onboarding and billing. Reporting waits until the next release.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">scope creep</p>
+<div>
+<p class="mean">Work added after the boundary was set, often as a small favor. Name it or it becomes the project.</p>
+<p class="ex">“A new dashboard wasn’t in the contract. That’s scope creep, not a quick add.”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Rewrite the bandwidth sentence for your actual week, and name one thing that is out of scope.</p>
+</article>
+<article class="day" id="day-7" data-day="7">
+<header class="day-head">
+<div>
+<p class="num">07 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Circle back, precisely</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 7 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">circle back</p>
+<div>
+<p class="mean">Return to a point later. Without a person and a day, it is a way of ending the topic, not moving it.</p>
+<p class="ex">“I’ll circle back Thursday with Ana’s numbers — a recommendation, not a recap.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">take offline</p>
+<div>
+<p class="mean">Move a side conversation out of this meeting so the group can continue. It does not mean drop it.</p>
+<p class="ex">“You and I should take the contract wording offline. This room doesn’t need the redline.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">stakeholder</p>
+<div>
+<p class="mean">Someone who can move the decision, or who has to live with it. Not a synonym for everyone invited.</p>
+<p class="ex">“The stakeholder is the plant manager. Copying the whole site list doesn’t make them one.”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Replace a vague “I’ll circle back” with your own sentence: who, what, and which day.</p>
+</article>
+</div>
+</section>
+<section class="week" id="week-2">
+<div class="wrap">
+<p class="week-kicker">Week 2</p>
+<h2>Nuance pairs</h2>
+<p class="dek">Close words. The gap is small, and it changes what you are promising.</p>
+<article class="day" id="day-8" data-day="8">
+<header class="day-head">
+<div>
+<p class="num">08 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Agree is not align</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 8 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">agree</p>
+<div>
+<p class="mean">You accept a specific claim or a specific proposal. It is about that point, not the whole direction.</p>
+<p class="ex">“I agree the margin is thin. That’s a fact, not a plan.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">align</p>
+<div>
+<p class="mean">You share the direction. You can agree the problem is real and still not be aligned on the response.</p>
+<p class="ex">“I’m not aligned on discounting our way to the number. I’d rather cut scope.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">agree, but not aligned</p>
+<div>
+<p class="mean">The useful split in the room: yes to the diagnosis, no to the remedy.</p>
+<p class="ex">“I agree we need a decision today. I’m not aligned that the decision is to sign.”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Write one sentence where you agree on the goal and refuse the method.</p>
+</article>
+<article class="day" id="day-9" data-day="9">
+<header class="day-head">
+<div>
+<p class="num">09 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Suggest, recommend, propose</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 9 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">suggest</p>
+<div>
+<p class="mean">Offer an idea with low commitment. Easy for the other person to decline without a fight.</p>
+<p class="ex">“I’d suggest we sleep on the vendor. I’m not ready to die on that hill tonight.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">recommend</p>
+<div>
+<p class="mean">Advise from judgment or evidence, and be willing to stand behind it.</p>
+<p class="ex">“I recommend vendor B. The support terms are the difference, not the demo.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">propose</p>
+<div>
+<p class="mean">Put a concrete motion in front of the room: this action, this owner, this time.</p>
+<p class="ex">“I propose we decide in tomorrow’s standup, not over chat, and that Sam records the call.”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Speak three short lines about the same decision: a suggestion, a recommendation, and a proposal.</p>
+</article>
+<article class="day" id="day-10" data-day="10">
+<header class="day-head">
+<div>
+<p class="num">10 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Delay, defer, postpone</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 10 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">delay</p>
+<div>
+<p class="mean">Make something later than it should have been, or admit that it has already slipped.</p>
+<p class="ex">“The audit delayed the dates. I’m not going to pretend the plan absorbed it.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">postpone</p>
+<div>
+<p class="mean">Move a planned event to a later slot. The event is still happening; the calendar changes.</p>
+<p class="ex">“Let’s postpone the town hall to Tuesday. Same agenda, different room.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">defer</p>
+<div>
+<p class="mean">Put a decision off on purpose. Also defer to: you accept someone else’s judgment over yours.</p>
+<p class="ex">“I’ll defer the vendor choice to you. I won’t defer the security review — that stays this week.”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Use all three verbs in one spoken sentence about a meeting you know.</p>
+</article>
+<article class="day" id="day-11" data-day="11">
+<header class="day-head">
+<div>
+<p class="num">11 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Concern, risk, issue</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 11 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">concern</p>
+<div>
+<p class="mean">A worry you want named before it becomes damage. It is not yet a broken thing.</p>
+<p class="ex">“My concern is the tone of the mail. It reads as a promise we may not keep.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">risk</p>
+<div>
+<p class="mean">A future event that might hurt the work. It has not happened; it has a chance and an impact.</p>
+<p class="ex">“The risk is the buyer reads “target” as a commitment and plans a campaign around it.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">issue</p>
+<div>
+<p class="mean">A problem that exists now and needs an owner. Don’t use it for a mild preference.</p>
+<p class="ex">“The issue is we already promised the 12th in writing. The concern is how we unwind that.”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Take one real worry and say whether it is a concern, a risk, or an issue, and why.</p>
+</article>
+<article class="day" id="day-12" data-day="12">
+<header class="day-head">
+<div>
+<p class="num">12 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Update, status, progress</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 12 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">update</p>
+<div>
+<p class="mean">What changed since the last conversation. If nothing changed, say that — it is still an update.</p>
+<p class="ex">“Update: Legal returned the draft this morning. Nothing else moved.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">status</p>
+<div>
+<p class="mean">Where the work stands right now. A snapshot, not a story about how hard everyone worked.</p>
+<p class="ex">“Status is amber. We are not blocked on people; we are blocked on the indemnity clause.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">progress</p>
+<div>
+<p class="mean">Movement toward the result. Activity, meetings, and drafts are not progress by themselves.</p>
+<p class="ex">“We’ve had a lot of activity and no progress on the clause that actually gates the signature.”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Give a twenty-second spoken update that separates status from real progress.</p>
+</article>
+<article class="day" id="day-13" data-day="13">
+<header class="day-head">
+<div>
+<p class="num">13 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Feedback, input, sign-off</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 13 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">feedback</p>
+<div>
+<p class="mean">A reaction meant to change the work. Ask for it on a draft, not on a decision you have already made.</p>
+<p class="ex">“I need feedback on the tone, not a rewrite, by Wednesday close of play.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">input</p>
+<div>
+<p class="mean">Facts or views you want before you decide. You are still the one who will decide.</p>
+<p class="ex">“I want input from Support today on whether this SLA is even operable.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">sign-off</p>
+<div>
+<p class="mean">Explicit approval to proceed. “Looks fine” is not sign-off unless you have agreed that those words count.</p>
+<p class="ex">“I need your sign-off as a yes in this thread before anything goes to the client.”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Write one sentence that asks for only one of the three, and name the person.</p>
+</article>
+<article class="day" id="day-14" data-day="14">
+<header class="day-head">
+<div>
+<p class="num">14 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Urgent is not the priority</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 14 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">urgent</p>
+<div>
+<p class="mean">Time is short. Someone’s clock is running. That alone does not make it the most important work.</p>
+<p class="ex">“Their board mail is urgent. It has to go tonight, whatever else is true.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">important</p>
+<div>
+<p class="mean">The outcome cares. A thing can be important for months and still not be today’s work.</p>
+<p class="ex">“The rebrand is important and not urgent. It can wait until the outage is stable.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">priority</p>
+<div>
+<p class="mean">What you will actually do first when both lists are long. Say it out loud or the loudest voice wins.</p>
+<p class="ex">“The outage is the priority. I’ll answer the board mail after the customer update is out.”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Name one thing in your week that is urgent, one that is important, and which one is the priority.</p>
+</article>
+</div>
+</section>
+<section class="week" id="week-3">
+<div class="wrap">
+<p class="week-kicker">Week 3</p>
+<h2>Email and written tone</h2>
+<p class="dek">How a message sounds when you cannot use your voice to soften it.</p>
+<article class="day" id="day-15" data-day="15">
+<header class="day-head">
+<div>
+<p class="num">15 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Hedge once</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 15 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">hedge</p>
+<div>
+<p class="mean">Limit how hard you claim something, without sounding unsure of your own name. One hedge is enough.</p>
+<p class="ex">“I’d be careful about calling this a commitment. We haven’t priced the second year.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">My read is</p>
+<div>
+<p class="mean">Signals interpretation, not a verified fact. Senior, and still open to correction.</p>
+<p class="ex">“My read is they will not approve a multi-year deal this quarter.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">It looks as though</p>
+<div>
+<p class="mean">A precise softener when the evidence is incomplete. Don’t stack it with maybe, just, and I think.</p>
+<p class="ex">“It looks as though the client is cooling on the upsell. I don’t have that in writing yet.”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Rewrite “This plan will fail” with a single precise hedge, then say it as you would in a steering meeting.</p>
+</article>
+<article class="day" id="day-16" data-day="16">
+<header class="day-head">
+<div>
+<p class="num">16 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Firm, still polite</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 16 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">I’m not able to</p>
+<div>
+<p class="mean">A boundary. You are refusing the request, not confessing a personal weakness.</p>
+<p class="ex">“I’m not able to approve this version. The liability cap has been removed.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">We’ll need</p>
+<div>
+<p class="mean">States the condition for a yes. No apology attached, and no false door.</p>
+<p class="ex">“We’ll need the revised numbers before I can sign. I can turn them around the same day.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">That doesn’t work for us</p>
+<div>
+<p class="mean">Clear, and not an insult. Use it when a softer no would be read as a negotiation.</p>
+<p class="ex">“A net-90 term doesn’t work for us. We can talk about net-45 with a deposit.”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Write a two-sentence no that does not apologize for the no.</p>
+</article>
+<article class="day" id="day-17" data-day="17">
+<header class="day-head">
+<div>
+<p class="num">17 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Ask so they can answer</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 17 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">Could you</p>
+<div>
+<p class="mean">A real request in polite form, not a hypothetical. The next words should be the action.</p>
+<p class="ex">“Could you send the signed PDF, not a photo of the signature page?”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">Please</p>
+<div>
+<p class="mean">Direct, and right when you already have the standing to ask. Don’t wrap it in three sorrys.</p>
+<p class="ex">“Please send the redline by end of day. I’ll take comments in the document, not in chat.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">by when</p>
+<div>
+<p class="mean">The clock, plus why that clock exists. A deadline without a reason feels like pressure.</p>
+<p class="ex">“I need a yes or no by 4 pm Wednesday so I can brief the CFO at 9.”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Take a vague “let me know your thoughts” and rewrite it with an owner, an action, and a deadline.</p>
+</article>
+<article class="day" id="day-18" data-day="18">
+<header class="day-head">
+<div>
+<p class="num">18 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Bad news, first line</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 18 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">BLUF</p>
+<div>
+<p class="mean">Bottom line up front. The news is sentence one. Warmth after, not before.</p>
+<p class="ex">“We will not hit the 3 November release.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">one-line cause</p>
+<div>
+<p class="mean">Why, in a single line. A long prelude reads as if you are hiding the point.</p>
+<p class="ex">“The payments integration failed certification on Tuesday.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">the next step</p>
+<div>
+<p class="mean">What you propose to do, or what you need from them. Bad news without a move is just a sigh.</p>
+<p class="ex">“I propose we move the release to 17 November, and I can tell the client today if you agree.”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Write three short lines about a real or realistic slip: the news, the cause, the next step. Say them in that order.</p>
+</article>
+<article class="day" id="day-19" data-day="19">
+<header class="day-head">
+<div>
+<p class="num">19 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Follow up with the ask</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 19 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">follow up</p>
+<div>
+<p class="mean">A second touch that restates the ask. “Just checking in” with no ask is noise.</p>
+<p class="ex">“Following up on Monday’s note — I still need a yes or no on the travel budget.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">bump</p>
+<div>
+<p class="mean">Casual and internal. Fine in a team chat. Thin with a client or a senior you don’t know well.</p>
+<p class="ex">“Bumping this for the thread: are we approved to book, or should I hold?”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">easy to reply</p>
+<div>
+<p class="mean">Make the answer a choice, not an essay. You get decisions from busy people that way.</p>
+<p class="ex">“Reply with “book” or “hold” by tomorrow noon and I’ll take it from there.”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Write a follow-up you could send without rereading the whole thread.</p>
+</article>
+<article class="day" id="day-20" data-day="20">
+<header class="day-head">
+<div>
+<p class="num">20 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Who this is for</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 20 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">loop in</p>
+<div>
+<p class="mean">Add a person who now has a reason to be on the thread, and write that reason in the same line.</p>
+<p class="ex">“Looping in Helena, who owns renewals and needs to confirm the price.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">FYI</p>
+<div>
+<p class="mean">For their information. Say it when you truly expect no reply, or everyone assumes they must act.</p>
+<p class="ex">“FYI for the wider group — no action unless the date is wrong.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">the audience</p>
+<div>
+<p class="mean">Don’t add a crowd to create pressure. Every name should have a job: decide, act, or merely know.</p>
+<p class="ex">“I’m keeping this to the three of us until there’s a decision worth sharing.”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Write the one-line intro you would use to add someone to a thread, and state whether they must act.</p>
+</article>
+<article class="day" id="day-21" data-day="21">
+<header class="day-head">
+<div>
+<p class="num">21 <span class="today-pill">Today</span></p>
+<h3 class="day-title">The subject does the work</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 21 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">subject line</p>
+<div>
+<p class="mean">Carry the decision or the deadline. “Quick question” and “Hello” throw that work away.</p>
+<p class="ex">“Decision by Friday: keep or cut the pilot.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">one ask</p>
+<div>
+<p class="mean">A single action when the stakes are a decision. Context belongs under the ask, not before it.</p>
+<p class="ex">“One ask: reply keep or cut by Friday at 11. Usage numbers are below if you want them.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">FYI in the subject</p>
+<div>
+<p class="mean">If there is nothing to do, say so where they will see it before they open the mail.</p>
+<p class="ex">“FYI only: pilot notes from Thursday, no reply needed.”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Write a subject line and a first sentence for a decision you are actually waiting on.</p>
+</article>
+</div>
+</section>
+<section class="week" id="week-4">
+<div class="wrap">
+<p class="week-kicker">Week 4</p>
+<h2>Fluency under pressure</h2>
+<p class="dek">Nine days. What to say when the room is waiting and the sentence has to land.</p>
+<article class="day" id="day-22" data-day="22">
+<header class="day-head">
+<div>
+<p class="num">22 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Disagree in one breath</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 22 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">I see it differently</p>
+<div>
+<p class="mean">Disagree with the idea, and still sound like a partner. Don’t sandwich it between empty compliments.</p>
+<p class="ex">“I see it differently. A softer deadline saves the team and misses the buyer’s window.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">I’m not with you on that</p>
+<div>
+<p class="mean">Firmer than “I see it differently,” still aimed at the point and not at the person.</p>
+<p class="ex">“I’m not with you on cutting QA. The date matters less than a failed first week.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">I’d rather</p>
+<div>
+<p class="mean">The alternative, in the same breath. An objection with no other path is just a brake.</p>
+<p class="ex">“I’d rather keep the date and cut the reporting pack than ship a quieter failure.”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Speak a disagreement in three beats: the point, the reason, the alternative.</p>
+</article>
+<article class="day" id="day-23" data-day="23">
+<header class="day-head">
+<div>
+<p class="num">23 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Buy time, name the clock</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 23 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">I don’t want to guess</p>
+<div>
+<p class="mean">Buys a moment without pretending you know. Better than a confident wrong number.</p>
+<p class="ex">“I don’t want to guess at churn in this room.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">Let me check before I commit</p>
+<div>
+<p class="mean">Separates a fast answer from a promise. Use it when they are about to write your words down.</p>
+<p class="ex">“Let me check the dashboard before I commit to a figure you’ll repeat to the board.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">I’ll come back at</p>
+<div>
+<p class="mean">Time plus a product: a number, a name, a yes or a no. “I’ll get back to you” has neither.</p>
+<p class="ex">“I’ll come back at 3 with the figure from the dashboard, not a range.”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Replace “I’ll get back to you” with a clock and a specific thing you will bring.</p>
+</article>
+<article class="day" id="day-24" data-day="24">
+<header class="day-head">
+<div>
+<p class="num">24 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Play the decisions back</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 24 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">Let me play that back</p>
+<div>
+<p class="mean">Restate the decisions, not the whole discussion. You are checking the record, not performing a summary.</p>
+<p class="ex">“Let me play that back: phase one ships on the 12th, and design owns the empty states.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">What I heard</p>
+<div>
+<p class="mean">Frames the recap as your understanding, so people can correct it before the note goes out.</p>
+<p class="ex">“What I heard is that pricing stays open. Correct me if that was actually decided.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">What did I miss?</p>
+<div>
+<p class="mean">Invites the missing decision. Silence after a playback is how wrong notes get sent.</p>
+<p class="ex">“What did I miss that we actually decided, as opposed to discussed?”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Summarize an imaginary half-hour meeting in under thirty seconds, out loud: decisions only.</p>
+</article>
+<article class="day" id="day-25" data-day="25">
+<header class="day-head">
+<div>
+<p class="num">25 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Close the meeting</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 25 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">close</p>
+<div>
+<p class="mean">End on decisions, owners, and dates. A good discussion is not a result.</p>
+<p class="ex">“To close: the launch stays on the 12th. That is the decision.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">owner and date</p>
+<div>
+<p class="mean">Every decision leaves with a name and a clock. Unowned tasks die in the notes.</p>
+<p class="ex">“Mina sends the note by 5 today. If your name isn’t on an action, you don’t have one.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">not decided</p>
+<div>
+<p class="mean">Say what was parked, and who has it, or the room will remember three different versions.</p>
+<p class="ex">“The pricing exception is not decided. It’s parked with me for Monday.”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Close a fake meeting in four sentences: decision, owner, date, and one thing explicitly still open.</p>
+</article>
+<article class="day" id="day-26" data-day="26">
+<header class="day-head">
+<div>
+<p class="num">26 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Small talk with a purpose</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 26 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">a real detail</p>
+<div>
+<p class="mean">Open on something specific you actually know. Weather is a blank, unless the weather is the business.</p>
+<p class="ex">“You mentioned the Osaka visit — was that the supplier, or the new warehouse?”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">I ask because</p>
+<div>
+<p class="mean">Tie the minute of chat to the meeting, so it doesn’t feel like an interview.</p>
+<p class="ex">“I ask because it changes the capacity number we’re about to freeze.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">I’ll leave it there</p>
+<div>
+<p class="mean">End it. Small talk that cannot stop costs you more trust than skipping it.</p>
+<p class="ex">“I’ll leave it there. Shall we start with the forecast?”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Prepare one opener you could use with a stakeholder you actually meet, and say it out loud once.</p>
+</article>
+<article class="day" id="day-27" data-day="27">
+<header class="day-head">
+<div>
+<p class="num">27 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Come in, and finish</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 27 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">Can I come in on that?</p>
+<div>
+<p class="mean">A short interrupt that names the point. “Sorry, sorry, sorry” without a point is just noise.</p>
+<p class="ex">“Can I come in on the date? If we leave it vague, this meeting hasn’t decided anything.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">jump in</p>
+<div>
+<p class="mean">The usual American verb for the same move. Slightly more abrupt; fine when the pace is fast.</p>
+<p class="ex">“Sorry to jump in — the only decision this hour can make is the date.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">I wasn’t finished</p>
+<div>
+<p class="mean">A calm reclaim when someone cuts you off. Apologize for the overlap if you must, not for the content.</p>
+<p class="ex">“I wasn’t finished on the risk. Twenty seconds, then it’s yours.”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Practice one interrupt and one reclaim out loud. Keep each under twenty seconds.</p>
+</article>
+<article class="day" id="day-28" data-day="28">
+<header class="day-head">
+<div>
+<p class="num">28 <span class="today-pill">Today</span></p>
+<h3 class="day-title">What you know, and what you don’t</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 28 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">What I know is</p>
+<div>
+<p class="mean">The part you can stand behind. Start here when you are put on the spot.</p>
+<p class="ex">“What I know is the pilot closed at 18 percent.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">What I’m inferring is</p>
+<div>
+<p class="mean">The step beyond the evidence. Label it, and you sound careful rather than lost.</p>
+<p class="ex">“What I’m inferring is that a full rollout looks similar. That is a guess, not a result.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">I wouldn’t commit to that yet</p>
+<div>
+<p class="mean">Stops a hypothesis becoming a target while you are still talking.</p>
+<p class="ex">“I wouldn’t commit the quarter to that yet. Give me a week with the enterprise cohort.”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Answer a hard question in two spoken parts: what is known, and what is not yet known.</p>
+</article>
+<article class="day" id="day-29" data-day="29">
+<header class="day-head">
+<div>
+<p class="num">29 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Pin down the vague word</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 29 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">When you say…</p>
+<div>
+<p class="mean">Repeat their vague word. Soon, ASAP, some, support, later — don’t translate it in your head.</p>
+<p class="ex">“When you say soon, I want to check which soon you mean.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">Do you mean A or B?</p>
+<div>
+<p class="mean">Offer two meanings that would change the work. An open “can you clarify?” is easier to wave off.</p>
+<p class="ex">“Do you mean a helpdesk from day one, or only help with the install?”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">It changes</p>
+<div>
+<p class="mean">Say why you are asking, in one clause, so the question doesn’t sound like you weren’t listening.</p>
+<p class="ex">“It changes the estimate. Those are different teams.”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Pick a vague word you heard recently and turn it into one sharp question with two meanings.</p>
+</article>
+<article class="day" id="day-30" data-day="30">
+<header class="day-head">
+<div>
+<p class="num">30 <span class="today-pill">Today</span></p>
+<h3 class="day-title">Commit, or don’t</h3>
+</div>
+<button type="button" class="check" aria-pressed="false" aria-label="Mark day 30 done"><span class="box" aria-hidden="true"></span><span class="check-label">Mark done</span></button>
+</header>
+<div class="phrases">
+<div class="phrase">
+<p class="term">I can commit</p>
+<div>
+<p class="mean">A result and a time you control. If both aren’t yours, you don’t have a commitment to give.</p>
+<p class="ex">“I can commit to a first draft on Thursday at noon.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">I can’t commit</p>
+<div>
+<p class="mean">A clean limit. More useful than a soft yes you will miss.</p>
+<p class="ex">“I can’t commit to the client’s approval this week. That isn’t mine to give.”</p>
+</div>
+</div>
+<div class="phrase">
+<p class="term">I’ll try</p>
+<div>
+<p class="mean">Polite, and not a yes. Don’t offer it when someone is staffing or scheduling against your word.</p>
+<p class="ex">“I won’t say I’ll try. I’ll either send the draft Thursday, or I’ll tell you Wednesday that I can’t.”</p>
+</div>
+</div>
+</div>
+<p class="task"><span class="task-label">Task</span> Say one real commitment for this week and one thing you explicitly will not commit to. Then mark the day done.</p>
+</article>
+</div>
+</section>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <p>Kept in this browser only. No account, no tracking. Unmark a day by pressing Done again.</p>
+    <button type="button" class="reset" id="reset">Reset progress</button>
+  </div>
+</footer>
+<script>
+
+(function () {
+  var KEY = "english30-plan";
+  var cards = Array.prototype.slice.call(document.querySelectorAll("[data-day]"));
+  var countEl = document.getElementById("count");
+  var barEl = document.getElementById("bar");
+  var noteEl = document.getElementById("today-note");
+  var completeEl = document.getElementById("complete");
+
+  function load() {
+    try {
+      var raw = localStorage.getItem(KEY);
+      if (!raw) return { done: {}, start: null };
+      var data = JSON.parse(raw);
+      if (!data || typeof data !== "object") return { done: {}, start: null };
+      if (!data.done || typeof data.done !== "object" || Array.isArray(data.done)) data.done = {};
+      if (typeof data.start !== "string") data.start = null;
+      return data;
+    } catch (err) {
+      return { done: {}, start: null };
+    }
+  }
+
+  function save(state) {
+    localStorage.setItem(KEY, JSON.stringify(state));
+  }
+
+  function todayDay(start) {
+    if (!start) return null;
+    var parts = start.split("-");
+    if (parts.length !== 3) return null;
+    var y = Number(parts[0]);
+    var m = Number(parts[1]);
+    var d = Number(parts[2]);
+    if (!y || !m || !d) return null;
+    var startDate = new Date(y, m - 1, d);
+    if (isNaN(startDate.getTime())) return null;
+    var now = new Date();
+    var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    var diff = Math.round((today.getTime() - startDate.getTime()) / 86400000);
+    var n = diff + 1;
+    if (n < 1 || n > 30) return null;
+    return n;
+  }
+
+  function pad(n) {
+    return (n < 10 ? "0" : "") + n;
+  }
+
+  function render(state) {
+    var today = todayDay(state.start);
+    var doneCount = 0;
+    var i;
+    for (i = 0; i < cards.length; i++) {
+      var card = cards[i];
+      var day = String(card.getAttribute("data-day"));
+      var on = !!state.done[day];
+      if (on) card.classList.add("is-done");
+      else card.classList.remove("is-done");
+      if (today !== null && Number(day) === today) card.classList.add("is-today");
+      else card.classList.remove("is-today");
+      var btn = card.querySelector(".check");
+      if (btn) {
+        btn.setAttribute("aria-pressed", on ? "true" : "false");
+        var label = btn.querySelector(".check-label");
+        if (label) label.textContent = on ? "Done" : "Mark done";
+        btn.setAttribute("aria-label", (on ? "Mark day " : "Mark day ") + day + (on ? " not done" : " done"));
+      }
+      if (on) doneCount += 1;
+    }
+    if (countEl) countEl.textContent = String(doneCount);
+    if (barEl) barEl.style.width = ((doneCount / 30) * 100) + "%";
+    if (completeEl) completeEl.hidden = doneCount !== 30;
+    if (noteEl) {
+      if (!state.start) {
+        noteEl.textContent = "Any day is fine. The first one you mark sets today, and the highlight moves forward each morning.";
+      } else if (today === null) {
+        noteEl.textContent = "The 30-day window from your first check has passed. Nothing is highlighted; keep any day you still want.";
+      } else {
+        noteEl.textContent = "Today is day " + today + ", counted from " + state.start + ". Skip around if you need to.";
+      }
+    }
+  }
+
+  var state = load();
+  render(state);
+
+  for (var c = 0; c < cards.length; c++) {
+    (function (card) {
+      var btn = card.querySelector(".check");
+      if (!btn) return;
+      btn.addEventListener("click", function () {
+        var day = String(card.getAttribute("data-day"));
+        if (state.done[day]) {
+          delete state.done[day];
+        } else {
+          state.done[day] = true;
+          if (!state.start) {
+            var now = new Date();
+            state.start = now.getFullYear() + "-" + pad(now.getMonth() + 1) + "-" + pad(now.getDate());
+          }
+        }
+        save(state);
+        render(state);
+      });
+    })(cards[c]);
+  }
+
+  var reset = document.getElementById("reset");
+  if (reset) {
+    reset.addEventListener("click", function () {
+      state = { done: {}, start: null };
+      save(state);
+      render(state);
+    });
+  }
+})();
+</script>
+</body>
+</html>
